@@ -10,6 +10,7 @@ namespace LetsDo.BLL.Extension
         {
             services.AddScoped(typeof(IGenericService<>), typeof(GenericService<>));
             services.AddScoped<IEventService, EventService>();
+            services.AddScoped<ICategoryService, CategoryService>();
             return services;
         }
     }

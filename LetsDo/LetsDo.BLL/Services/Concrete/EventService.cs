@@ -6,7 +6,7 @@ namespace LetsDo.BLL.Services.Concrete
 {
     public class EventService:GenericService<Event> , IEventService
     {
-        public EventService(IGenericRepository<Event> repository, AppDbContext context) 
+        public EventService(IGenericRepository<Event> repository) 
             : base(repository) { }
     }
 }

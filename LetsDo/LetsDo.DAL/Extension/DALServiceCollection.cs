@@ -20,6 +20,7 @@ namespace LetsDo.DAL.Extension
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<IEventRepository, EventRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
             return services;
 
         }
