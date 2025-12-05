@@ -1,10 +1,8 @@
 ﻿using LetsDo.API.Dtos.Event;
 using LetsDo.BLL.Services.Abstract;
 using LetsDo.DAL.DataContext.Entities;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq.Expressions;
-
 namespace LetsDo.API.Controllers
 {
     [Route("api/[controller]")]

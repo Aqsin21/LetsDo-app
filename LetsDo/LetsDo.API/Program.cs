@@ -1,11 +1,12 @@
-using LetsDo.DAL.Extension;
+using LetsDo.API.Extension;
 using LetsDo.BLL.Extension;
+using LetsDo.DAL.Extension;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.builder.Services.AddDal(builder.Configuration);
 builder.Services.AddDal(builder.Configuration);
 builder.Services.AddBll();
+builder.Services.AddDatabaseServices(builder.Configuration);
 builder.Services.AddControllers();
                 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
